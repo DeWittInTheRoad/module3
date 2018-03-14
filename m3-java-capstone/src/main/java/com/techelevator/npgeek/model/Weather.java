@@ -2,7 +2,7 @@ package com.techelevator.npgeek.model;
 
 public class Weather {
     String parkCode;
-    int fiveDayForecast;
+    int fiveDayForecastValue;
     int low;
     int high;
     String forecast;
@@ -15,12 +15,12 @@ public class Weather {
         this.parkCode = parkCode;
     }
 
-    public int getFiveDayForecast() {
-        return fiveDayForecast;
+    public int getFiveDayForecastValue() {
+        return fiveDayForecastValue;
     }
 
-    public void setFiveDayForecast(int fiveDayForecast) {
-        this.fiveDayForecast = fiveDayForecast;
+    public void setFiveDayForecastValue(int fiveDayForecastValue) {
+        this.fiveDayForecastValue = fiveDayForecastValue;
     }
 
     public int getLow() {

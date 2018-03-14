@@ -20,6 +20,7 @@ public class ParkController {
 
     @Autowired
     ParkDao parkDao;
+    @Autowired
     WeatherDao weatherDao;
 
 
@@ -34,9 +35,10 @@ public class ParkController {
 
     @RequestMapping(path = "/parkDetails", method = RequestMethod.GET)
     public String handleParkDetails(
-            @RequestParam String parkCode, ModelMap model) {
+            @RequestParam String parkCode, ModelMap model, Weather weather) {
         model.addAttribute("park", parkDao.getParkByParkCode(parkCode));
-//        model.addAttribute("weather", weatherDao.getWeatherByParkCode(parkCode));
+//        List<Weather> weathers = weatherDao.getWeatherByParkCode(parkCode);
+        model.addAttribute("weather", weatherDao.getWeatherByParkCode(parkCode));
         return "parkDetails";
 
 

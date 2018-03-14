@@ -38,11 +38,11 @@
     </div>
 
     <div>
-        <%--<c:forEach items="${weather}" var="weather">--%>
-            <%--<img src="img/weather/${weather.forecast}" />--%>
-            <%--<c:out value="${weather.low}"/><br>--%>
-            <%--<c:out value="${weather.high}"/><br>--%>
-        <%--</c:forEach>--%>
+        <c:forEach items="${weather}" var="weather">
+            <img src="img/weather/${weather.forecast}.png" />
+           Low: <c:out value="${weather.low}"/><br>
+            High: <c:out value="${weather.high}"/><br>
+        </c:forEach>
     </div>
 
 </section>

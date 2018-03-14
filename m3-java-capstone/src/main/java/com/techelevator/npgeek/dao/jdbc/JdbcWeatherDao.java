@@ -21,22 +21,9 @@ public class JdbcWeatherDao implements WeatherDao {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
-//    @Override
-//    public Weather getWeatherByParkCode(String parkCode) {
-//        List<Weather> allWeather = new ArrayList<>();
-//        Weather weather = null;
-//        String sqlSelectAllWeather = "SELECT * FROM weather WHERE parkCode = ?";
-//        SqlRowSet results = jdbcTemplate.queryForRowSet(sqlSelectAllWeather, parkCode);
-//        while(results.next()) {
-//            weather = mapRowToWeather(results);
-//        }
-//        return weather;
-//    }
-
     @Override
     public List<Weather> getWeatherByParkCode(String parkCode) {
         List<Weather> allWeather = new ArrayList<>();
-//        Weather weather = null;
         String sqlSelectAllWeather = "SELECT * FROM weather WHERE parkcode = ?";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sqlSelectAllWeather, parkCode);
         while(results.next()) {
@@ -48,7 +35,7 @@ public class JdbcWeatherDao implements WeatherDao {
     private Weather mapRowToWeather(SqlRowSet row) {
         Weather weather = new Weather();
         weather.setParkCode(row.getString("parkCode"));
-        weather.setFiveDayForecast(row.getInt("fiveDayForecast"));
+        weather.setFiveDayForecastValue(row.getInt("fiveDayForecastValue"));
         weather.setLow(row.getInt("low"));
         weather.setHigh(row.getInt("high"));
         weather.setForecast(row.getString("forecast"));
@@ -59,3 +46,15 @@ public class JdbcWeatherDao implements WeatherDao {
 
 
 }
+
+//    @Override
+//    public Weather getWeatherByParkCode(String parkCode) {
+//        List<Weather> allWeather = new ArrayList<>();
+//        Weather weather = null;
+//        String sqlSelectAllWeather = "SELECT * FROM weather WHERE parkCode = ?";
+//        SqlRowSet results = jdbcTemplate.queryForRowSet(sqlSelectAllWeather, parkCode);
+//        while(results.next()) {
+//            weather = mapRowToWeather(results);
+//        }
+//        return weather;
+//    }
