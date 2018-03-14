@@ -1,6 +1,6 @@
 package com.techelevator.npgeek.dao.jdbc;
 
-import com.techelevator.npgeek.dao.SurveyDAO;
+import com.techelevator.npgeek.dao.SurveyDao;
 import com.techelevator.npgeek.model.Survey;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class JdbcSurveyDao implements SurveyDAO{
+public class JdbcSurveyDao implements SurveyDao {
 
     private JdbcTemplate jdbcTemplate;
 

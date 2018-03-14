@@ -4,7 +4,7 @@ import com.techelevator.npgeek.model.Survey;
 
 import java.util.List;
 
-public interface SurveyDAO {
+public interface SurveyDao {
 
     public List<Survey> getAllSurveys();
     public void save(Survey survey);

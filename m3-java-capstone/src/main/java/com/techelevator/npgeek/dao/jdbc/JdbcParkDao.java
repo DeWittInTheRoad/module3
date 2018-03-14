@@ -24,7 +24,7 @@ public class JdbcParkDao implements ParkDao {
     @Override
     public List<Park> getAllParks() {
         List<Park> allParks = new ArrayList<>();
-        String sqlSelectAllParks = "SELECT * FROM parks";
+        String sqlSelectAllParks = "SELECT * FROM park";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sqlSelectAllParks);
         while(results.next()) {
             allParks.add(mapRowToParks(results));
