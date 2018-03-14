@@ -1,11 +1,19 @@
 package com.techelevator.npgeek.model;
 
 public class Survey {
+    private Long surveyid;
     String parkCode;
     String emailAddress;
     String state;
     String activityLevel;
 
+    public Long getSurveyid() {
+        return surveyid;
+    }
+
+    public void setSurveyid(Long surveyid) {
+        this.surveyid = surveyid;
+    }
 
     public String getParkCode() {
         return parkCode;

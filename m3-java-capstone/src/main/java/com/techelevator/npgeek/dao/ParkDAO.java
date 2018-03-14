@@ -1,4 +1,11 @@
 package com.techelevator.npgeek.dao;
 
-public interface ParkDAO {
+import com.techelevator.npgeek.model.Park;
+
+import java.util.List;
+
+public interface ParkDao {
+
+    public List<Park> getAllParks();
+    public Park getParkByParkCode(String parkCode);
 }
