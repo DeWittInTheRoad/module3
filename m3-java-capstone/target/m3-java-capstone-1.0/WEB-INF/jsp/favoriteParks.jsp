@@ -9,11 +9,15 @@
 
     <c:url var="pageUrl" value="/favoriteParks"/>
     <br>
-    <span class="centered"> <a href="${pageUrl}">Post A Message</a></span>
     <ul>
-        <c:forEach items="${allForumPosts}" var="survey">
+        <c:forEach items="${allSurveys}" var="survey">
+            <c:set var = "parkImage" value = "${survey.parkCode}.jpg"/>
+            <c:set var = "lowerCaseCode" value = "${fn:toLowerCase(parkImage)}"/>
 
-            by <c:out value="${survey.parkCode}"/><br>
+            <img src="img/parks/${lowerCaseCode}"/>
+            Park Name: <c:out value="${survey.parkName}"/>
+            Count: <c:out value="${survey.count}"/>
+
 
             <br>
             <hr>

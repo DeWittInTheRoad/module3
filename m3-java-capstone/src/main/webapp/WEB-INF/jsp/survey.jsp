@@ -14,15 +14,15 @@
     <div>
     <form:label path="parkCode">Favorite National Park</form:label>
         <form:select path="parkCode">
-            <form:option value="CuyahogaValley">Cuyahoga Valley National Park</form:option>
-            <form:option value="GrandCanyon">Grand Canyon National Park</form:option>
-            <form:option value="Glacier">Glacier National Park</form:option>
-            <form:option value="GreatSmokyMountains">Great Smoky Mountains National Park</form:option>
-            <form:option value="GrandTeton">Grand Teton National Park</form:option>
-            <form:option value="MountRainier">Mount Rainier National Park</form:option>
-            <form:option value="RockyMountain">Rocky Mountain National Park</form:option>
-            <form:option value="Yellowstone">Yellowstone National Park</form:option>
-            <form:option value="Yosemite">Yosemite National Park</form:option>
+            <form:option value="CVNP">Cuyahoga Valley National Park</form:option>
+            <form:option value="GCNP">Grand Canyon National Park</form:option>
+            <form:option value="GCNP">Glacier National Park</form:option>
+            <form:option value="GSMNP">Great Smoky Mountains National Park</form:option>
+            <form:option value="GTNP">Grand Teton National Park</form:option>
+            <form:option value="MRNP">Mount Rainier National Park</form:option>
+            <form:option value="RMNP">Rocky Mountain National Park</form:option>
+            <form:option value="YNP">Yellowstone National Park</form:option>
+            <form:option value="YNP2">Yosemite National Park</form:option>
         </form:select>
     </div><br>
 

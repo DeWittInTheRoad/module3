@@ -1,5 +1,6 @@
 package com.techelevator.npgeek.controller;
 
+import com.techelevator.npgeek.dao.SurveyDao;
 import com.techelevator.npgeek.dao.WeatherDao;
 import com.techelevator.npgeek.model.Park;
 import com.techelevator.npgeek.model.Survey;
@@ -15,7 +16,6 @@ import com.techelevator.npgeek.dao.ParkDao;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
-import java.time.LocalDateTime;
 import java.util.List;
 
 
@@ -28,7 +28,7 @@ public class ParkController {
     @Autowired
     WeatherDao weatherDao;
     @Autowired
-    Survey surveyDao;
+    SurveyDao surveyDao;
 
 
     @RequestMapping(path="/allParks", method= RequestMethod.GET)
@@ -64,8 +64,16 @@ public class ParkController {
         if(result.hasErrors()) {
             return "survey";
         }
-        survey.save(survey);
+        surveyDao.save(survey);
         return "redirect:/favoriteParks";
+    }
+
+    @RequestMapping(path="/favoriteParks", method=RequestMethod.GET)
+    public String showAllReviews(ModelMap model) {
+        model.addAttribute("allSurveys", surveyDao.getAllSurveys());
+
+
+        return "favoriteParks";
     }
 
 }
