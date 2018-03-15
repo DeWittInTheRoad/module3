@@ -39,7 +39,7 @@
 
     </div>
 
-    <div>
+    <div id="weather">
         <%--<form method="POST" action="${formAction}">--%>
         <%--<!-- Rounded switch -->--%>
         <%--<label class="switch">--%>
@@ -57,13 +57,43 @@
                 <%--</select>--%>
             <%--</form>--%>
 
+        <div id="today">
+            <c:set var="today" value="${weather[0]}"/>
+            <img src="img/weather/${today.forecast}.png" />
+            <p>Low: <c:out value="${today.low}"/></p>
+            <p>High: <c:out value="${today.high}"/></p>
+            
+            <c:if test ="${today.forecast == 'rain'}">
+                <p>Pack rain gear and wear waterproof shoes</p>
+            </c:if>
+            <c:if test ="${today.forecast == 'snow'}">
+                <p>Pack snow shoes</p>
+            </c:if>
+            <c:if test ="${today.forecast == 'sunny'}">
+                <p>Pack sunblock</p>
+            </c:if>
+            <c:if test ="${today.forecast == 'thunderstorms'}">
+                <p>Seek shelter and avoid hiking on exposed ridges</p>
+            </c:if>
+            <c:if test="${today.high > 75}">
+                <p>Bring an extra gallon of water</p>
+            </c:if>
+            <c:if test="${today.high < 20}">
+                <p>Danger of exposure to frigid temperatures</p>
+            </c:if>
+            <c:if test="${today.high - today.low > 20}">
+                <p>Wear breathable layers</p>
+            </c:if>
+        </div>
 
-        <c:forEach items="${weather}" var="weather">
+        <c:forEach items="${weather}" var="weather" begin="1">
+            <div id="fiveDayForecast">
             <img src="img/weather/${weather.forecast}.png" />
-           Low: <c:out value="${weather.low}"/><br>
-            High: <c:out value="${weather.high}"/><br>
+            <p>Low: <c:out value="${weather.low}"/></p>
+            <p>High: <c:out value="${weather.high}"/></p>
+            </div>
         </c:forEach>
-    </div>
+        </div>
 
 </section>
 <c:import url="/WEB-INF/jsp/common/footer.jsp" />

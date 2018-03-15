@@ -128,3 +128,7 @@ body .slider.round {
 body .slider.round:before {
     border-radius: 50%;
 }
+
+#weather{
+    display: flex;
+}
