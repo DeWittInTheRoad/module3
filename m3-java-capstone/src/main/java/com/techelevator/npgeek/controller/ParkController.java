@@ -27,8 +27,8 @@ public class ParkController {
     ParkDao parkDao;
     @Autowired
     WeatherDao weatherDao;
-//    @Autowired
-//    ForumDao forumDao;
+    @Autowired
+    Survey surveyDao;
 
 
     @RequestMapping(path="/allParks", method= RequestMethod.GET)
@@ -64,8 +64,7 @@ public class ParkController {
         if(result.hasErrors()) {
             return "survey";
         }
-//        newForumPost.setDatePosted(LocalDateTime.now());
-//        forumDao.save(newForumPost);
+        survey.save(survey);
         return "redirect:/favoriteParks";
     }
 

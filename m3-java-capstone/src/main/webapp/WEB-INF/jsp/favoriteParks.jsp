@@ -7,11 +7,23 @@
 
 <section id="centeredPanel">
 
+    <c:url var="pageUrl" value="/favoriteParks"/>
+    <br>
+    <span class="centered"> <a href="${pageUrl}">Post A Message</a></span>
+    <ul>
+        <c:forEach items="${allForumPosts}" var="survey">
+
+            by <c:out value="${survey.parkCode}"/><br>
+
+            <br>
+            <hr>
+        </c:forEach>
+    </ul>
+    <br>
 
 
 
 
-    
 </section>
 
 <c:import url="/WEB-INF/jsp/common/footer.jsp" />
