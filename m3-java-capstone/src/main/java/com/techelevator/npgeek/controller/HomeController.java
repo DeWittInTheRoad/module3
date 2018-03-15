@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
         @RequestMapping("/")
         public String displayHomePage() {
-            return "common/homePage";
+            return "redirect:/allParks";
         }
     }
 

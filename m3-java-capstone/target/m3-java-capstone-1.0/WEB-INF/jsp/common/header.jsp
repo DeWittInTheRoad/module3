@@ -9,6 +9,7 @@
 </body>
 </html>
 
+<html>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -28,14 +29,10 @@
     <a href="${homePageHref}">
         <img src="${logoSrc}" alt="National Park Geek logo" />
     </a>
-    <h1>National Park</h1>
-    <p> placeholder </p>
 </header>
 <nav>
-    <h2>Explore The National Parks</h2>
-    <p> Use these state of the art web applications to learn more about the national parks! </p>
     <ul>
-        <li><a href="common/homePage">Home</a></li>
+        <li><a href="/allParks">Home</a></li>
         <li><a href="survey">Survey</a></li>
     </ul>
 </nav>
