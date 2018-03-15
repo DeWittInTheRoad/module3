@@ -4,23 +4,20 @@ import com.techelevator.npgeek.dao.SurveyDao;
 import com.techelevator.npgeek.dao.WeatherDao;
 import com.techelevator.npgeek.model.Park;
 import com.techelevator.npgeek.model.Survey;
+import com.techelevator.npgeek.model.TempSwitch;
 import com.techelevator.npgeek.model.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import com.techelevator.npgeek.dao.ParkDao;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
 import java.util.List;
 
-
+@SessionAttributes({"isCelsius", "parkCode"})
 @Controller
-//    @SessionAttributes({"product", "shoppingCart", "itemsInCart"})  Survey Session, temp
 public class ParkController {
 
     @Autowired
@@ -42,13 +39,29 @@ public class ParkController {
 
     @RequestMapping(path = "/parkDetails", method = RequestMethod.GET)
     public String handleParkDetails(
-            @RequestParam String parkCode, ModelMap model, Weather weather) {
+            @RequestParam String parkCode, ModelMap model, Weather weather) { //String tempSwitch
+
+//        tempSwitch = "F";
+//        model.addAttribute("tempSwitch", tempSwitch);
+        model.addAttribute("parkCode", parkCode);
         model.addAttribute("park", parkDao.getParkByParkCode(parkCode));
         model.addAttribute("weather", weatherDao.getWeatherByParkCode(parkCode));
         return "parkDetails";
 
-
     }
+
+//    @RequestMapping(path = "/parkDetails", method = RequestMethod.GET)
+//    public String switchTemp(
+//            @RequestParam ModelMap model) {//String tempSwitch
+////
+//        String parkCode = (String) model.get("parkCode");
+//        String tempSwitch = (String) model.get("tempSwitch");
+//        model.addAttribute("park", parkDao.getParkByParkCode(parkCode));
+//        model.addAttribute("weather", weatherDao.getWeatherByParkCode(parkCode));
+//        return "parkDetails";
+//
+//    }
+
 
     @RequestMapping(path="/survey", method=RequestMethod.GET)
     public String newSurveyInput(ModelMap model) {

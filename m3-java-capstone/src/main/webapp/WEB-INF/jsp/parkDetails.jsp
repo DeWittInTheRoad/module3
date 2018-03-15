@@ -8,11 +8,13 @@
 
 
 <section id="centeredPanel">
+
     <c:url value="/parkDetails" var="formAction"/>
 
-    <%--<form method="POST" action="${formAction}">--%>
+
 
         <c:set var="parkCode" value="${param.parkCode}"/>
+        <c:set var="tempSwitch" value="${param.tempSwitch}"/>
     <div>
 
         <c:set var = "parkImage" value = "${park.parkCode}.jpg"/>
@@ -38,6 +40,24 @@
     </div>
 
     <div>
+        <%--<form method="POST" action="${formAction}">--%>
+        <%--<!-- Rounded switch -->--%>
+        <%--<label class="switch">--%>
+        <%--<input type="checkbox" name="celsius" id ="celsius" value="celsius">--%>
+        <%--<span class="slider round"></span>--%>
+    <%--</label>--%>
+            <%--<input type="submit" value="Submit"/>--%>
+        <%--</form>--%>
+
+            <%--<form method="GET" action="${formAction}">--%>
+                <%--<select name="tempSwitch">--%>
+                    <%--<option value="celsius">celsius</option>--%>
+                    <%--<option value="fahrenheit">fahrenheit</option>--%>
+                    <%--<input type="submit" value="Submit"/>--%>
+                <%--</select>--%>
+            <%--</form>--%>
+
+
         <c:forEach items="${weather}" var="weather">
             <img src="img/weather/${weather.forecast}.png" />
            Low: <c:out value="${weather.low}"/><br>

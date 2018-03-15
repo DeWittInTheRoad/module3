@@ -15,122 +15,62 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="parkDetails.jsp" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/parkDetails.jsp">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="318">
-                    <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="49" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7041379">
+    <splitter split-orientation="horizontal" split-proportion="0.7189591">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="placeholder.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/placeholder.txt">
+          <file leaf-file-name="parkDetails.jsp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/parkDetails.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+                <state relative-caret-position="855">
+                  <caret line="57" column="27" lean-forward="true" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/controller/HomeController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#279#280#0" expanded="true" />
-                    <element signature="e#330#331#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="favoriteParks.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/favoriteParks.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="allParks.jsp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/allParks.jsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JdbcSurveyDao.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/dao/jdbc/JdbcSurveyDao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="277">
-                  <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <marker date="1521128658375" expanded="true" signature="969:996" ph="SELECT * FRO... survey_result" />
-                    <marker date="1521128658375" expanded="true" signature="1037:1100" ph="SELECT COUNT... " />
-                    <marker date="1521128658375" expanded="true" signature="1037:1101" ph="SELECT COUNT... " />
-                    <marker date="1521128658375" expanded="true" signature="1037:1102" ph="SELECT COUNT... " />
-                    <marker date="1521128658375" expanded="true" signature="1037:1174" ph="SELECT COUNT... " />
-                    <marker date="1521128658375" expanded="true" signature="1037:1175" ph="SELECT COUNT... " />
-                    <marker date="1521128658375" expanded="true" signature="1037:1208" ph="SELECT COUNT... " />
-                    <marker date="1521128658375" expanded="true" signature="1037:1245" ph="SELECT COUNT... " />
-                    <marker date="1521128658375" expanded="true" signature="1037:1264" ph="SELECT COUNT... survey_result" />
-                    <marker date="1521128658375" expanded="true" signature="1309:1353" ph="SELECT COUNT... survey_result" />
-                    <marker date="1521128658375" expanded="true" signature="1309:1354" ph="SELECT COUNT... survey_result" />
-                    <marker date="1521128658375" expanded="true" signature="1309:1386" ph="SELECT COUNT... survey_result" />
-                    <marker date="1521128658375" expanded="true" signature="1309:1387" ph="SELECT COUNT... survey_result" />
-                    <marker date="1521128658375" expanded="true" signature="1309:1388" ph="SELECT COUNT... survey_result" />
-                    <marker date="1521128658375" expanded="true" signature="1309:1423" ph="SELECT COUNT... survey_result" />
-                    <marker date="1521128658375" expanded="true" signature="2212:2312" ph="INSERT INTO survey_result... " />
-                    <marker date="1521128658375" expanded="true" signature="2579:2609" ph="SELECT NEXTV... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SurveyResult.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/SurveyResult.java">
+          <file leaf-file-name="TempSwitch.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/TempSwitch.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
-                  <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+                  <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
                   <folding>
-                    <element signature="e#158#159#0" expanded="true" />
-                    <element signature="e#189#190#0" expanded="true" />
-                    <element signature="e#237#238#0" expanded="true" />
-                    <element signature="e#277#278#0" expanded="true" />
-                    <element signature="e#312#313#0" expanded="true" />
-                    <element signature="e#343#344#0" expanded="true" />
-                    <element signature="e#391#392#0" expanded="true" />
-                    <element signature="e#431#432#0" expanded="true" />
-                    <element signature="e#460#461#0" expanded="true" />
-                    <element signature="e#488#489#0" expanded="true" />
-                    <element signature="e#527#528#0" expanded="true" />
-                    <element signature="e#561#562#0" expanded="true" />
+                    <element signature="e#153#154#0" expanded="true" />
+                    <element signature="e#200#201#0" expanded="true" />
+                    <element signature="e#235#236#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="survey.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/survey.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="74" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ParkController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/controller/ParkController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="278">
+                  <caret line="41" column="97" lean-forward="false" selection-start-line="41" selection-start-column="97" selection-end-line="41" selection-end-column="97" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="site.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/css/site.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="549">
+                  <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -139,13 +79,12 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Survey.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Survey.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/Survey.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+                <state relative-caret-position="-79">
+                  <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
                   <folding>
-                    <element signature="e#210#211#0" expanded="true" />
                     <element signature="e#241#242#0" expanded="true" />
                     <element signature="e#287#288#0" expanded="true" />
                     <element signature="e#327#328#0" expanded="true" />
@@ -170,24 +109,63 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Weather.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/Weather.java">
+          <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/header.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+                <state relative-caret-position="450">
+                  <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ParkController.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/controller/ParkController.java">
+          <file leaf-file-name="Weather.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/Weather.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="72" column="38" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="38" />
+                <state relative-caret-position="435">
+                  <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="favoriteParks.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/favoriteParks.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JdbcSurveyDao.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/dao/jdbc/JdbcSurveyDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
                   <folding>
-                    <element signature="imports" expanded="true" />
+                    <marker date="1521132255742" expanded="true" signature="968:1031" ph="SELECT COUNT... " />
+                    <marker date="1521132255742" expanded="true" signature="968:1032" ph="SELECT COUNT... " />
+                    <marker date="1521132255742" expanded="true" signature="968:1033" ph="SELECT COUNT... " />
+                    <marker date="1521132255742" expanded="true" signature="968:1105" ph="SELECT COUNT... " />
+                    <marker date="1521132255742" expanded="true" signature="968:1106" ph="SELECT COUNT... " />
+                    <marker date="1521132255742" expanded="true" signature="968:1139" ph="SELECT COUNT... " />
+                    <marker date="1521132255742" expanded="true" signature="968:1176" ph="SELECT COUNT... " />
+                    <marker date="1521132255742" expanded="true" signature="968:1195" ph="SELECT COUNT... survey_result" />
+                    <marker date="1521132255742" expanded="true" signature="1781:1881" ph="INSERT INTO survey_result... " />
+                    <marker date="1521132255742" expanded="true" signature="2148:2178" ph="SELECT NEXTV... " />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="allParks.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/allParks.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -277,18 +255,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/dao/WeatherDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/dao/jdbc/JdbcWeatherDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/Weather.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/parkDetails.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/site.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/Survey.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/survey.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/controller/ParkController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/dao/SurveyDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/SurveyResult.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/favoriteParks.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/dao/jdbc/JdbcSurveyDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/site.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/TempSwitch.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/parkDetails.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/controller/ParkController.java" />
       </list>
     </option>
   </component>
@@ -472,6 +451,16 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m3-java-capstone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="m3-java-capstone" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="m3-java-capstone" type="b2602c69:ProjectViewProjectNode" />
@@ -683,12 +672,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521029558437</updated>
       <workItem from="1521029560142" duration="27982000" />
-      <workItem from="1521122279982" duration="6028000" />
+      <workItem from="1521122279982" duration="13028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34010000" />
+    <option name="totallyTimeSpent" value="41010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-296" y="-1057" width="1920" height="1057" extended-state="6" />
@@ -714,11 +703,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31600833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06652807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22790202" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28381255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -765,9 +754,9 @@
         <state relative-caret-position="150">
           <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#279#280#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -785,24 +774,16 @@
         <state relative-caret-position="345">
           <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1521128658375" expanded="true" signature="969:996" ph="SELECT * FRO... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1037:1100" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1101" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1102" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1174" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1175" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1208" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1245" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1264" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1353" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1354" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1386" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1387" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1388" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1423" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="2212:2312" ph="INSERT INTO survey_result... " />
-            <marker date="1521128658375" expanded="true" signature="2579:2609" ph="SELECT NEXTV... " />
+            <marker date="1521132255742" expanded="true" signature="968:1031" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1032" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1033" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1105" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1106" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1139" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1176" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1195" ph="SELECT COUNT... survey_result" />
+            <marker date="1521132255742" expanded="true" signature="1781:1881" ph="INSERT INTO survey_result... " />
+            <marker date="1521132255742" expanded="true" signature="2148:2178" ph="SELECT NEXTV... " />
           </folding>
         </state>
       </provider>
@@ -824,7 +805,6 @@
         <state relative-caret-position="105">
           <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
-            <element signature="e#210#211#0" expanded="true" />
             <element signature="e#241#242#0" expanded="true" />
             <element signature="e#287#288#0" expanded="true" />
             <element signature="e#327#328#0" expanded="true" />
@@ -929,25 +909,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/npgeek.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-910">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,14 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/allParks.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.4.RELEASE/spring-web-4.3.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -999,21 +956,9 @@
         <state relative-caret-position="150">
           <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/dao/jdbc/JdbcParkDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="38" column="89" lean-forward="false" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1521048636274" expanded="true" signature="796:814" ph="SELECT * FRO... parks" />
-            <marker date="1521048636274" expanded="true" signature="1152:1189" ph="SELECT * FRO... products" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#279#280#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1022,24 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/controller/ParkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="72" column="38" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/survey.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1055,23 +982,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/Weather.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/parkDetails.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/favoriteParks.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1084,12 +995,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/SurveyResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding>
+            <element signature="e#158#159#0" expanded="false" />
+            <element signature="e#189#190#0" expanded="false" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#277#278#0" expanded="false" />
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#343#344#0" expanded="false" />
+            <element signature="e#391#392#0" expanded="false" />
+            <element signature="e#431#432#0" expanded="false" />
+            <element signature="e#460#461#0" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#527#528#0" expanded="false" />
+            <element signature="e#561#562#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/Survey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="-79">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
           <folding>
-            <element signature="e#210#211#0" expanded="true" />
             <element signature="e#241#242#0" expanded="true" />
             <element signature="e#287#288#0" expanded="true" />
             <element signature="e#327#328#0" expanded="true" />
@@ -1113,51 +1044,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/SurveyResult.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/survey.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/allParks.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/model/TempSwitch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/favoriteParks.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/dao/jdbc/JdbcParkDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="38" column="89" lean-forward="false" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1521048636274" expanded="true" signature="796:814" ph="SELECT * FRO... parks" />
+            <marker date="1521048636274" expanded="true" signature="1152:1189" ph="SELECT * FRO... products" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/dao/jdbc/JdbcSurveyDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        <state relative-caret-position="330">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <marker date="1521132255742" expanded="true" signature="968:1031" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1032" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1033" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1105" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1106" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1139" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1176" ph="SELECT COUNT... " />
+            <marker date="1521132255742" expanded="true" signature="968:1195" ph="SELECT COUNT... survey_result" />
+            <marker date="1521132255742" expanded="true" signature="1781:1881" ph="INSERT INTO survey_result... " />
+            <marker date="1521132255742" expanded="true" signature="2148:2178" ph="SELECT NEXTV... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techelevator/npgeek/controller/ParkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="41" column="97" lean-forward="false" selection-start-line="41" selection-start-column="97" selection-end-line="41" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1521128658375" expanded="true" signature="969:996" ph="SELECT * FRO... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1037:1100" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1101" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1102" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1174" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1175" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1208" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1245" ph="SELECT COUNT... " />
-            <marker date="1521128658375" expanded="true" signature="1037:1264" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1353" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1354" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1386" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1387" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1388" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="1309:1423" ph="SELECT COUNT... survey_result" />
-            <marker date="1521128658375" expanded="true" signature="2212:2312" ph="INSERT INTO survey_result... " />
-            <marker date="1521128658375" expanded="true" signature="2579:2609" ph="SELECT NEXTV... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/parkDetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="27" lean-forward="true" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
