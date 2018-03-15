@@ -29,7 +29,7 @@
     <div>
     <form:label path="emailAddress">Email</form:label>
     <form:input path="emailAddress" placeholder="enter email"/>
-    <form:errors path="emailAddress" />
+    <form:errors path="emailAddress" style="color:red"/>
     </div><br>
 
     <div>
@@ -95,7 +95,7 @@
 
     <div>
     <form:label path="activityLevel">Activity Level</form:label>
-        <form:radiobutton path = "activityLevel" value = "inactive" label = "inactive" />
+        <form:radiobutton path = "activityLevel" value = "inactive" label = "inactive" checked="checked"/>
         <form:radiobutton path = "activityLevel" value = "sedentary" label = "sedentary" />
         <form:radiobutton path = "activityLevel" value = "active" label = "active" />
         <form:radiobutton path = "activityLevel" value = "extremely active" label = "extremely active" />
