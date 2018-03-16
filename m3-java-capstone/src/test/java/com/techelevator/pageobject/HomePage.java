@@ -13,11 +13,6 @@ public class HomePage {
         this.webDriver = webDriver;
     }
 
-    public favoriterks clickWeightCalculatorLink() {
-        WebElement weightCalculatorLink = webDriver.findElement(By.linkText("Alien Weight"));
-        weightCalculatorLink.click();
-        return new AlienWeightCalculatorInputPage(webDriver)
-    }
 }
 
 
