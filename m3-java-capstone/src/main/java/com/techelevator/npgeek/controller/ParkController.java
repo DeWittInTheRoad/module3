@@ -54,7 +54,7 @@ public class ParkController {
     public String chooseTempScale(@PathVariable String parkCode, @RequestParam String convert, HttpSession session, ModelMap modelHolder) {
         session.setAttribute("convert", convert);
 
-        return "redirect:/parkDetails/" + parkCode;
+        return "redirect:/parkDetails/{parkCode}";
     }
 
 

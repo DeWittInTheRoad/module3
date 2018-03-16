@@ -3,8 +3,7 @@
 <%--<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
-
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 
 <section id="centeredPanel">
@@ -18,7 +17,7 @@
 
         <c:set var ="lowerCaseImg" value = "${fn:toLowerCase(parkImage)}"/>
 
-        <img src="${lowerCaseImg}" />
+        <img src="${lowerCaseImg}" /><br>
         Park Name: <c:out value="${park.parkName}"/><br>
         State: <c:out value="${park.state}"/><br>
         Acreage: <c:out value="${park.acreage}"/><br>
@@ -38,13 +37,15 @@
 
     <div id="weather">
         <c:url var="conversionSubmit" value="/parkDetails/${park.parkCode}" />
-        <form method="post" action="${conversionSubmit }">
-        <label><input type="radio" name="convert" value="C">Celcius <input
-            type="radio" name="convert" value="F">Fahrenheit <input
-            type="submit">
+        <form method="post" action="${conversionSubmit}">
+        <label>
+            <input type="radio" name="convert" value="C">Celcius
+            <input type="radio" name="convert" value="F" checked="checked">Fahrenheit
+            <input type="submit">
 
         </label>
         </form>
+
     </div>
 
         <div id="today">
@@ -65,8 +66,8 @@
                 </c:otherwise>
             </c:choose>
 
-            <p>Low: <c:out value="${lowTemp}${tempScale}"/></p>
-            <p>High: <c:out value="${highTemp}${tempScale}"/></p>
+            <p>Low: <fmt:formatNumber maxFractionDigits="0" value="${lowTemp}" /><c:out value="${tempScale}"/></p>
+            <p>High: <fmt:formatNumber maxFractionDigits="0" value="${highTemp}" /><c:out value="${tempScale}" /></p>
 
             
             <c:if test ="${today.forecast == 'rain'}">
@@ -108,9 +109,8 @@
 
                     </c:otherwise>
                 </c:choose>
-
-                <p>Low: <c:out value="${lowTemp}${tempScale}"/></p>
-                <p>High: <c:out value="${highTemp}${tempScale}"/></p>
+                <p>Low: <fmt:formatNumber maxFractionDigits="0" value="${lowTemp}" /><c:out value="${tempScale}"/></p>
+                <p>High: <fmt:formatNumber maxFractionDigits="0" value="${highTemp}" /><c:out value="${tempScale}" /></p>
             </div>
         </c:forEach>
         </div>
