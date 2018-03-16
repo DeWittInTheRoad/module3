@@ -9,19 +9,16 @@
 
 <section id="centeredPanel">
 
-    <c:url value="/parkDetails" var="formAction"/>
-
 
 
         <c:set var="parkCode" value="${param.parkCode}"/>
         <c:set var="tempSwitch" value="${param.tempSwitch}"/>
     <div>
+        <c:url var="parkImage" value="/img/parks/${park.parkCode}.jpg" />
 
-        <c:set var = "parkImage" value = "${park.parkCode}.jpg"/>
-        <c:set var = "lowerCaseCode" value = "${fn:toLowerCase(parkImage)}"/>
+        <c:set var ="lowerCaseImg" value = "${fn:toLowerCase(parkImage)}"/>
 
-       <img src="img/parks/${lowerCaseCode}" style="max-height: 200px;"/><br>
-
+        <img src="${lowerCaseImg}" />
         Park Name: <c:out value="${park.parkName}"/><br>
         State: <c:out value="${park.state}"/><br>
         Acreage: <c:out value="${park.acreage}"/><br>
@@ -40,28 +37,37 @@
     </div>
 
     <div id="weather">
-        <%--<form method="POST" action="${formAction}">--%>
-        <%--<!-- Rounded switch -->--%>
-        <%--<label class="switch">--%>
-        <%--<input type="checkbox" name="celsius" id ="celsius" value="celsius">--%>
-        <%--<span class="slider round"></span>--%>
-    <%--</label>--%>
-            <%--<input type="submit" value="Submit"/>--%>
-        <%--</form>--%>
+        <c:url var="conversionSubmit" value="/parkDetails/${park.parkCode}" />
+        <form method="post" action="${conversionSubmit }">
+        <label><input type="radio" name="convert" value="C">Celcius <input
+            type="radio" name="convert" value="F">Fahrenheit <input
+            type="submit">
 
-            <%--<form method="GET" action="${formAction}">--%>
-                <%--<select name="tempSwitch">--%>
-                    <%--<option value="celsius">celsius</option>--%>
-                    <%--<option value="fahrenheit">fahrenheit</option>--%>
-                    <%--<input type="submit" value="Submit"/>--%>
-                <%--</select>--%>
-            <%--</form>--%>
+        </label>
+        </form>
+    </div>
 
         <div id="today">
             <c:set var="today" value="${weather[0]}"/>
-            <img src="img/weather/${today.forecast}.png" />
-            <p>Low: <c:out value="${today.low}"/></p>
-            <p>High: <c:out value="${today.high}"/></p>
+            <img src="/img/weather/${today.forecast}.png" />
+
+            <c:choose>
+                <c:when test="${convert == 'C'}">
+                    <c:set var="highTemp" value="${(today.high - 32) / 1.8}" />
+                    <c:set var="lowTemp" value="${(today.low - 32) / 1.8}" />
+                    <c:set var="tempScale" value="°C" />
+                </c:when>
+                <c:otherwise>
+                    <c:set var="highTemp" value="${today.high}" />
+                    <c:set var="lowTemp" value="${today.low}" />
+                    <c:set var="tempScale" value="°F" />
+
+                </c:otherwise>
+            </c:choose>
+
+            <p>Low: <c:out value="${lowTemp}${tempScale}"/></p>
+            <p>High: <c:out value="${highTemp}${tempScale}"/></p>
+
             
             <c:if test ="${today.forecast == 'rain'}">
                 <p>Pack rain gear and wear waterproof shoes</p>
@@ -88,9 +94,23 @@
 
         <c:forEach items="${weather}" var="weather" begin="1">
             <div id="fiveDayForecast">
-            <img src="img/weather/${weather.forecast}.png" />
-            <p>Low: <c:out value="${weather.low}"/></p>
-            <p>High: <c:out value="${weather.high}"/></p>
+            <img src="/img/weather/${weather.forecast}.png" />
+                <c:choose>
+                    <c:when test="${convert == 'C'}">
+                        <c:set var="highTemp" value="${(weather.high - 32) / 1.8}" />
+                        <c:set var="lowTemp" value="${(weather.low - 32) / 1.8}" />
+                        <c:set var="tempScale" value="°C" />
+                    </c:when>
+                    <c:otherwise>
+                        <c:set var="highTemp" value="${weather.high}" />
+                        <c:set var="lowTemp" value="${weather.low}" />
+                        <c:set var="tempScale" value="°F" />
+
+                    </c:otherwise>
+                </c:choose>
+
+                <p>Low: <c:out value="${lowTemp}${tempScale}"/></p>
+                <p>High: <c:out value="${highTemp}${tempScale}"/></p>
             </div>
         </c:forEach>
         </div>

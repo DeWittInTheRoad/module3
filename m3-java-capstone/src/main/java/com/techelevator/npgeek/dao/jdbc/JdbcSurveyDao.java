@@ -1,8 +1,6 @@
 package com.techelevator.npgeek.dao.jdbc;
 
-import com.techelevator.npgeek.dao.ParkDao;
 import com.techelevator.npgeek.dao.SurveyDao;
-import com.techelevator.npgeek.model.Park;
 import com.techelevator.npgeek.model.Survey;
 import com.techelevator.npgeek.model.SurveyResult;
 import org.springframework.beans.factory.annotation.Autowired;

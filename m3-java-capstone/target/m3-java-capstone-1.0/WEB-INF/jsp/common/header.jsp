@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>National Park Geek</title>
 </head>
 <body>
 
@@ -33,6 +33,6 @@
 <nav>
     <ul>
         <li><a href="/allParks">Home</a></li>
-        <li><a href="survey">Survey</a></li>
+        <li><a href="/survey">Survey</a></li>
     </ul>
 </nav>
