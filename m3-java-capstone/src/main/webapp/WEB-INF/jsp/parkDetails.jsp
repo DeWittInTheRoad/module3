@@ -62,7 +62,7 @@
             <img src="img/weather/${today.forecast}.png" />
             <p>Low: <c:out value="${today.low}"/></p>
             <p>High: <c:out value="${today.high}"/></p>
-            
+
             <c:if test ="${today.forecast == 'rain'}">
                 <p>Pack rain gear and wear waterproof shoes</p>
             </c:if>
