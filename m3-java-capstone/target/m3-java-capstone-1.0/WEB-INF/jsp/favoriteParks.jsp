@@ -12,9 +12,9 @@
     <ul>
         <c:forEach items="${allSurveys}" var="survey">
             <c:set var = "parkImage" value = "${survey.parkCode}.jpg"/>
-            <c:set var = "lowerCaseCode" value = "${fn:toLowerCase(parkImage)}"/>
+            <c:set var = "lowerCaseImg" value = "${fn:toLowerCase(parkImage)}"/>
 
-            <img src="img/parks/${lowerCaseCode}"/>
+            <img src="img/parks/${lowerCaseImg}"/>
             Park Name: <c:out value="${survey.parkName}"/>
             Count: <c:out value="${survey.count}"/>
 
