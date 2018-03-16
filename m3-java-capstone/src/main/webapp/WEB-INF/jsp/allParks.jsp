@@ -24,7 +24,7 @@
         </div>
         <div>
 
-            <h3><c:out value="${park.parkName}"/></h3>
+            <a href="${detailsUrl}"><h3><c:out value="${park.parkName}"/></h3></a>
             <p><c:out value="${park.parkDescription}"/></p>
 
         </div>
