@@ -10,32 +10,28 @@
 <section id="centeredPanel">
 
     <c:forEach items="${allParks}" var="park">
-        <%--<c:url value="/parkDetails"--%>
-               <%--var="parkDetailLink">--%>
-            <%--<c:param name="parkCode" value="${park.parkCode}"> </c:param>--%>
-    <%--</c:url>--%>
+        <div id="parkContainer">
         <c:url var="imgUrl" value="/img/parks/${park.parkCode}.jpg" />
         <c:url var="detailsUrl" value="/parkDetails/${park.parkCode}" />
 
     <div style="display: flex;">
         <div>
-                <%--img src="img/parks/"${fn:toLowerCase("${park.parkCode}").jpg""" --%>
                     <c:set var = "parkImage" value = "${park.parkCode}.jpg"/>
                     <c:set var = "lowerCaseImg" value = "${fn:toLowerCase(parkImage)}"/>
 
-            <a href="${detailsUrl}"><img src="img/parks/${lowerCaseImg}" style="max-height: 200px;"/></a>
+            <a href="${detailsUrl}"><img src="img/parks/${lowerCaseImg}" style="max-height: 350px;border-radius: 25px 25px 25px 25px;"/></a>
 
         </div>
         <div>
-            <br>
 
-            <c:out value="${park.parkName}"/><br>
-            <c:out value="${park.parkDescription}"/><br>
-            <br>
+            <h3><c:out value="${park.parkName}"/></h3>
+            <p><c:out value="${park.parkDescription}"/></p>
+
         </div>
 
         <br>
     </div>
+        </div>
     <hr style="border: 0; clear: both; display: block; width: 96%; background-color: #b5b5ad; height: 1px;">
     </c:forEach>
 </section>

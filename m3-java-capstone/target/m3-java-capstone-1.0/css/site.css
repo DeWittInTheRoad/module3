@@ -21,6 +21,7 @@ nav {
     margin-bottom: 50px;
     color: #ffffff;
     display: flex;
+    background-color: lavender;
 }
 
 nav h2 {
@@ -33,6 +34,7 @@ nav p {
     /*font-size: 12pt;*/
     font-style: italic;
     padding-left: 60px;
+    font-size: 30px
 }
 
 nav ul {
@@ -131,4 +133,112 @@ body .slider.round:before {
 
 #weather{
     display: flex;
+}
+
+#parkContainer{
+    box-shadow:  5px 4px 2px 0 hsla(0, 0%, 0%, 0.2);
+    transition: 0.3s;
+
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 25px 25px 25px 25px;
+    background: whitesmoke;
+
+    /*color: hsl(0, 0%, 45%);*/
+    /*font-weight: 400;*/
+    /*padding: 25px;*/
+    /*font-size: medium;*/
+    /*padding-top: 25px;*/
+}
+
+#parkContainer:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#parkContainer h3{
+
+    padding-left: 50px;
+    font-size: x-large;
+    color: hsl(0, 0%, 13%);
+    font-weight: 700;
+
+}
+
+#centeredPanel h3 {
+    color: hsl(0, 0%, 13%);
+    font-weight: 700;
+}
+
+#centeredPanel p {
+    color: hsl(0, 0%, 45%);
+    font-weight: 400;
+    padding: 25px;
+    font-size: medium;
+    padding-top: 25px;
+}
+
+#parkDetailsMainImage {
+    height: 500px;
+    border-radius: 25px;
+
+}
+
+#imageAndQuote {
+    padding-left: 25px;
+    display: flex;
+    font-size: x-large;
+}
+
+#parkQuote {
+    padding: 10%;
+}
+
+#parkDetailsContainer p{
+    padding: 0px;
+}
+
+#today {
+    box-shadow:  5px 4px 2px 0 hsla(0, 0%, 0%, 0.2);
+    transition: 0.3s;
+
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 25px 25px 25px 25px;
+    background: whitesmoke;
+}
+
+#today:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#fiveDayForecast {
+    box-shadow:  5px 4px 2px 0 hsla(0, 0%, 0%, 0.2);
+    transition: 0.3s;
+
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 25px 25px 25px 25px;
+    background: whitesmoke;
+}
+
+#fiveDayForecast:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#SurveyBox {
+    box-shadow:  5px 4px 2px 0 hsla(0, 0%, 0%, 0.2);
+    transition: 0.3s;
+
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 25px;
+    margin: 25px;
+    background: whitesmoke;
+    /* padding-top: 0px; */
+    /* padding-left: 0px; */
+    padding: 25px;
+}
+
+#SurveyBox:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }

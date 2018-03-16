@@ -7,7 +7,7 @@
 
 <section id="centeredPanel">
 
-
+<div id = "SurveyBox">
 <c:url var="newReviewUrl" value="/survey"/>
 <form:form method="POST" action="${newReviewUrl }" modelAttribute="survey">
 
@@ -107,7 +107,7 @@
     </div>
 
 </form:form>
-
+</div>
 
 </section>
 
