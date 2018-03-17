@@ -28,6 +28,7 @@ nav {
     border-top-width: 10px;
     border-bottom-width: 10px;
 
+
 }
 
 nav h2 {
@@ -267,3 +268,143 @@ body .slider.round:before {
     text-align: center;
 
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(100px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+    grid-gap: 1em;
+    background-color: white;
+    padding: 10px;
+    margin-top: 245px;
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    /*font-size: 30px;*/
+}
+
+.gridParkImage {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    color: white;
+    display: flex;
+    flex-flow: column-reverse;
+
+
+}
+.gridParkName {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    /*border-width: 3px;*/
+    /*border-style: solid;*/
+    /*background-color: whitesmoke;*/
+
+}
+
+.primary {
+    color: hsl(0,0%,13%);
+    font-weight: 700;
+    font-style: normal;
+    /*font-size:24px;*/
+
+}
+
+.secondary {
+    color: hsl(0,0%,13%);
+    font-weight: 400;
+    font-style: normal;
+    /*font-size:24px;*/
+}
+
+.ancillary {
+    color: hsl(0,0%,45%);
+    font-weight: 400;
+    /*font-style: normal;*/
+    /*font-size:24px;*/
+}
+
+.gridParkStats {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+
+
+}
+
+.gridParkInfo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+    text-align:left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(auto, auto) 1fr 1fr;
+
+
+}
+
+.gridParkDescription{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+
+}
+.gridParkInfoColumn1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+
+}
+.gridParkInfoColumn2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+
+}
+
+.gridParkInfo h3{
+    color: hsl(0,0%,13%);
+    font-weight: 700;
+
+}
+
+.gridParkInfo h5{
+    color: hsl(0,0%,29%);
+    font-weight: 400;
+    text-align:left;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.gridParkInfo p{
+    color: hsl(0,0%,45%);
+    font-weight: 400;
+    margin: 0px;
+}
+
+.gridWeatherToday{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+
+}
+
+.gridWeather4Day {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    display:flex;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+}
+
