@@ -17,7 +17,7 @@
 
         <c:set var ="lowerCaseImg" value = "${fn:toLowerCase(parkImage)}"/>
 
-        <img src="${lowerCaseImg}" />
+        <img src="${lowerCaseImg}" /><br>
         Park Name: <c:out value="${park.parkName}"/><br>
         State: <c:out value="${park.state}"/><br>
         Acreage: <c:out value="${park.acreage}"/><br>
