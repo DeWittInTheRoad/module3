@@ -56,7 +56,7 @@
 
         <c:set var="lowerCaseImg" value="${fn:toLowerCase(parkImage)}"/>
         <%--<img id="parkDetailsMainImage" src="${lowerCaseImg}"/>--%>
-        <c:out value="${park.inspirationalQuote}"/>"
+        "<c:out value="${park.inspirationalQuote}"/>"
        - <c:out value="${park.inspirationalQuoteSource}"/>
 
     </div>

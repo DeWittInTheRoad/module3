@@ -35,7 +35,7 @@
     <div>
 
 
-        <form:label path="state">Favorite National Park</form:label>
+        <form:label path="state">State of Residence</form:label>
         <form:select path="state">
             <form:option value="AL">Alabama</form:option>
             <form:option value="AK">Alaska</form:option>
