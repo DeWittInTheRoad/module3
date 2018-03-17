@@ -5,7 +5,7 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
 
 
-<section id="centeredPanel">
+<section id="centeredPanel" style="margin-top: 245px">
 
 <div id = "SurveyBox">
 <c:url var="newReviewUrl" value="/survey"/>
@@ -95,10 +95,10 @@
 
     <div>
     <form:label path="activityLevel">Activity Level</form:label>
-        <form:radiobutton path = "activityLevel" value = "inactive" label = "inactive" checked="checked"/>
-        <form:radiobutton path = "activityLevel" value = "sedentary" label = "sedentary" />
-        <form:radiobutton path = "activityLevel" value = "active" label = "active" />
-        <form:radiobutton path = "activityLevel" value = "extremely active" label = "extremely active" />
+        <form:radiobutton path = "activityLevel" value = "inactive" label = "Inactive" checked="checked"/>
+        <form:radiobutton path = "activityLevel" value = "sedentary" label = "Sedentary" />
+        <form:radiobutton path = "activityLevel" value = "active" label = "Active" />
+        <form:radiobutton path = "activityLevel" value = "extremely Active" label = "Extremely Active" />
     <form:errors path="activityLevel" />
     </div><br>
 
