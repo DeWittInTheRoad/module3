@@ -6,7 +6,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 
-<section id="centeredPanel">
+<div class ="centeredPanel">
     <div id="parkDetailsContainer">
 
         <c:set var="parkCode" value="${param.parkCode}"/>
@@ -138,5 +138,5 @@
 
         </div>
     </div>
-</section>
+</div>
 <c:import url="/WEB-INF/jsp/common/footer.jsp"/>

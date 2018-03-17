@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -20,27 +19,31 @@
 <head>
     <meta charset="UTF-8">
     <title>National Park Geek</title>
-    <c:url value="/css/site.css" var="cssHref" />
+    <c:url value="/css/site.css" var="cssHref"/>
     <link rel="stylesheet" href="${cssHref}">
 </head>
 
 <body>
-<header>
-    <c:url value="/" var="homePageHref" />
-    <c:url value="/img/logo.png" var="logoSrc" />
-    <a href="${homePageHref}">
-        <img src="${logoSrc}" alt="National Park Geek logo" />
-    </a>
-</header>
-<nav>
-    <p>
-        <a href="/allParks">
-            <span class="glyphicon glyphicon-home"></span>
+<div class="navbar">
+    <header>
+        <c:url value="/" var="homePageHref"/>
+        <c:url value="/img/logo.png" var="logoSrc"/>
+        <a href="${homePageHref}">
+            <img src="${logoSrc}" alt="National Park Geek logo"/>
         </a>
-    </p>
-    <p>
-        <a href="/survey">
-            <span class="glyphicon glyphicon-list-alt"></span>
+    </header>
+    <nav>
+        <p>
+            <a href="/allParks">
+                <span class="glyphicon glyphicon-home"></span>
+            </a>
+        </p>
+        <p style="padding-left: 30px;">
+            <a href="/survey">
+                <span class="glyphicon glyphicon-list-alt">
+        <p style="margin: 0px; padding-left: 10px; font-size: large; font-style: normal; padding-top: 5px;">
+            Survey</p></span>
         </a>
-    </p>
-</nav>
+        </p>
+    </nav>
+</div>
