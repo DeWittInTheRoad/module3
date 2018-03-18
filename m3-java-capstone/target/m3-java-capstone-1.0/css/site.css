@@ -310,9 +310,10 @@ body .slider.round:before {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 100px 1fr 1fr 1fr 1fr;
-
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
+
 .gridParkName {
     grid-column-start: 1;
     grid-column-end: 3;
