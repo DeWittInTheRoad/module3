@@ -1,5 +1,5 @@
 header {
-    margin: 25px;
+    margin: 25px 25px 15px;
 }
 
 header h1 {
@@ -17,11 +17,18 @@ header img {
 }
 
 nav {
-    margin-top: 50px;
-    margin-bottom: 50px;
     color: #ffffff;
     display: flex;
     background-color: lavender;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: groove;
+    padding-top: 5px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+
+
 }
 
 nav h2 {
@@ -45,7 +52,7 @@ nav li {
     padding-right: 20px;
 }
 
-section.centeredPanel {
+.centeredPanel {
     clear: both;
     display: block;
     width: 80%;
@@ -53,18 +60,18 @@ section.centeredPanel {
     min-height: 450px;
     background-color: #FFF;
     border-radius: 7px;
-    margin-left: 60px;
-    margin-top: 60px;
+    margin-left: 10px;
+    margin-top: 245px;
 }
 
-section.centeredPanel h2 {
+.centeredPanel h2 {
     color: #000000;
-    text-align: center;
+    text-align: left;
 }
 
-section.centeredPanel p {
+.centeredPanel p {
     color: #000;
-    text-align: center;
+    text-align: left;
 }
 
 .centered {
@@ -96,6 +103,10 @@ body .slider {
     transition: .4s;
 }
 
+#parkContainer img:hover {
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
 body .slider:before {
     position: absolute;
     content: "";
@@ -143,6 +154,7 @@ body .slider.round:before {
     margin-left: 25px;
     border-radius: 25px 25px 25px 25px;
     background: whitesmoke;
+    width: 115%
 
     /*color: hsl(0, 0%, 45%);*/
     /*font-weight: 400;*/
@@ -151,6 +163,9 @@ body .slider.round:before {
     /*padding-top: 25px;*/
 }
 
+#parkDetailsContainer{
+
+}
 #parkContainer:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -164,12 +179,12 @@ body .slider.round:before {
 
 }
 
-#centeredPanel h3 {
+.centeredPanel h3 {
     color: hsl(0, 0%, 13%);
     font-weight: 700;
 }
 
-#centeredPanel p {
+.centeredPanel p {
     color: hsl(0, 0%, 45%);
     font-weight: 400;
     padding: 25px;
@@ -189,8 +204,20 @@ body .slider.round:before {
     font-size: x-large;
 }
 
-#parkQuote {
-    padding: 10%;
+.parkQuote {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end:6;
+
+}
+
+.parkQuoteSource {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
 }
 
 #parkDetailsContainer p{
@@ -239,3 +266,227 @@ body .slider.round:before {
 #SurveyBox:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.footer {
+    background: dimgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    padding-left: 30px;
+    text-align: center;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(100px, auto) minmax(50px, 300px);
+    grid-gap: 1em;
+    /*background-color: white;*/
+    padding: 10px;
+    margin-top: 245px;
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    /*padding: 20px 0;*/
+    /*font-size: 30px;*/
+}
+
+.gridParkImage {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    color: white;
+    /*display: flex;*/
+    /*flex-flow: column-reverse;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 1fr 1fr 1fr 1fr;
+
+
+}
+.gridParkName {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    /*border-width: 3px;*/
+    /*border-style: solid;*/
+    /*background-color: whitesmoke;*/
+
+}
+
+.primary {
+    color: hsl(0,0%,13%);
+    font-weight: 700;
+    font-style: normal;
+    /*font-size:24px;*/
+
+}
+
+.secondary {
+    color: hsl(0,0%,13%);
+    font-weight: 400;
+    font-style: normal;
+    /*font-size:24px;*/
+}
+
+.ancillary {
+    color: hsl(0,0%,45%);
+    font-weight: 400;
+    /*font-style: normal;*/
+    /*font-size:24px;*/
+}
+
+.gridParkStats {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+
+
+}
+
+.gridParkInfo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+    text-align:left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(auto, auto) 1fr 1fr;
+    /*grid-gap: 1em;*/
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+
+}
+
+.gridParkDescription{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+
+}
+.gridParkInfoColumn1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    background-color:lavender;
+
+}
+.gridParkInfoColumn2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    background-color:lavender;
+
+}
+
+.gridParkInfo h3{
+    color: hsl(0,0%,13%);
+    font-weight: 700;
+
+}
+
+.gridParkInfo h5{
+    color: hsl(0,0%,29%);
+    font-weight: 400;
+    text-align:left;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.gridParkInfo p{
+    color: hsl(0,0%,45%);
+    font-weight: 400;
+    margin: 0px;
+}
+
+.gridWeatherToday{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 0px;
+    border-radius: 15px;
+
+}
+.gridWeatherToday h3 {
+    padding-top:0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.todayWeatherImage{
+    border-radius: 15px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:6;
+
+}
+
+.todayTemperature {
+    grid-column-start: 3;
+    grid-row-start:1;
+    grid-row-end: 4;
+}
+
+.todayConversion {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.climateAdvisory {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end:6;
+    /*grid-row-end: 6;*/
+
+}
+
+.temperatureAdvisory {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end:7;
+    /*grid-row-end: 7;*/
+
+}
+
+.gridWeather4Day {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    display:flex;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+
+.gridWeather4Day img {
+    max-width: 85%;
+}
+
