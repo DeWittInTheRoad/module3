@@ -12,7 +12,7 @@
 <form:form method="POST" action="${newReviewUrl }" modelAttribute="survey">
 
     <div>
-    <form:label path="parkCode">Favorite National Park</form:label>
+    <form:label path="parkCode">Favorite National Park: </form:label>
         <form:select path="parkCode">
             <form:option value="CVNP">Cuyahoga Valley National Park</form:option>
             <form:option value="GCNP">Grand Canyon National Park</form:option>
@@ -27,7 +27,7 @@
     </div><br>
 
     <div>
-    <form:label path="emailAddress">Email</form:label>
+    <form:label path="emailAddress">Email: </form:label>
     <form:input path="emailAddress" placeholder="enter email"/>
     <form:errors path="emailAddress" style="color:red"/>
     </div><br>
@@ -35,7 +35,7 @@
     <div>
 
 
-        <form:label path="state">State of Residence</form:label>
+        <form:label path="state">State of Residence: </form:label>
         <form:select path="state">
             <form:option value="AL">Alabama</form:option>
             <form:option value="AK">Alaska</form:option>
@@ -94,11 +94,11 @@
     </div><br>
 
     <div>
-    <form:label path="activityLevel">Activity Level</form:label>
-        <form:radiobutton path = "activityLevel" value = "inactive" label = "Inactive" checked="checked"/>
-        <form:radiobutton path = "activityLevel" value = "sedentary" label = "Sedentary" />
-        <form:radiobutton path = "activityLevel" value = "active" label = "Active" />
-        <form:radiobutton path = "activityLevel" value = "extremely Active" label = "Extremely Active" />
+    <form:label path="activityLevel">Activity Level: </form:label>
+        <form:radiobutton path = "activityLevel" value = "inactive" label = "Inactive " checked="checked"/>
+        <form:radiobutton path = "activityLevel" value = "sedentary" label = " Sedentary " />
+        <form:radiobutton path = "activityLevel" value = "active" label = " Active " />
+        <form:radiobutton path = "activityLevel" value = "extremely Active" label = " Extremely Active " />
     <form:errors path="activityLevel" />
     </div><br>
 

@@ -9,8 +9,7 @@ public class SurveyResult {
         return parkCode;
     }
 
-    public void setParkCode(String parkCode) {
-        this.parkCode = parkCode;
+    public void setParkCode(String parkCode) { this.parkCode = parkCode;
     }
 
     public String getParkName() {

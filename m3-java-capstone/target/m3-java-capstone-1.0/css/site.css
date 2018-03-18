@@ -103,6 +103,10 @@ body .slider {
     transition: .4s;
 }
 
+#parkContainer img:hover {
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
 body .slider:before {
     position: absolute;
     content: "";
@@ -200,8 +204,20 @@ body .slider.round:before {
     font-size: x-large;
 }
 
-#parkQuote {
-    padding: 10%;
+.parkQuote {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end:6;
+
+}
+
+.parkQuoteSource {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
 }
 
 #parkDetailsContainer p{
@@ -272,16 +288,16 @@ body .slider.round:before {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: minmax(100px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto);
+    grid-template-rows: minmax(100px, auto) minmax(50px, 300px);
     grid-gap: 1em;
-    background-color: white;
+    /*background-color: white;*/
     padding: 10px;
     margin-top: 245px;
 }
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
+    /*padding: 20px 0;*/
     /*font-size: 30px;*/
 }
 
@@ -289,8 +305,11 @@ body .slider.round:before {
     grid-column-start: 2;
     grid-column-end: 4;
     color: white;
-    display: flex;
-    flex-flow: column-reverse;
+    /*display: flex;*/
+    /*flex-flow: column-reverse;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
 
 }
@@ -346,6 +365,10 @@ body .slider.round:before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(auto, auto) 1fr 1fr;
+    /*grid-gap: 1em;*/
+    padding-top: 0px;
+    padding-bottom: 0px;
+
 
 
 }
@@ -360,12 +383,14 @@ body .slider.round:before {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
+    background-color:lavender;
 
 }
 .gridParkInfoColumn2{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
+    background-color:lavender;
 
 }
 
@@ -396,6 +421,54 @@ body .slider.round:before {
     border-width: 3px;
     border-style: solid;
     background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 0px;
+
+}
+.gridWeatherToday h3 {
+    padding-top:0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.todayWeatherImage{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:6;
+
+}
+
+.todayTemperature {
+    grid-column-start: 3;
+    grid-row-start:1;
+    grid-row-end: 4;
+}
+
+.todayConversion {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.climateAdvisory {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    /*grid-row-end: 6;*/
+
+}
+
+.temperatureAdvisory {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    /*grid-row-end: 7;*/
 
 }
 
