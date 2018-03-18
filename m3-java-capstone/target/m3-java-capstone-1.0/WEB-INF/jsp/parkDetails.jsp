@@ -15,9 +15,9 @@
     <%--<img id="parkDetailsMainImage" src="${lowerCaseImg}"/>--%>
 
     <div class="gridParkInfo" style="padding-top: 0px; padding-bottom: 0px">
-        <div class="gridParkName" style="background-color: darkgrey">
-            <em class="primary" style="font-size: 24px;"><c:out value="${park.parkName}"/></em>, <em class="ancillary"
-                                                                                                     style="font-size: 20px; font-style: italic;"><c:out
+        <div class="gridParkName" style="background: linear-gradient(#ccc, #333);" >
+            <em class="primary" style="font-size: 24px;"><c:out value="${park.parkName}"/></em> <em class="ancillary"
+                                                                                                     style="font-size: 20px; font-style: italic; color: #cacaca;"><c:out
                 value="${park.state}"/></em>
         </div>
         <div class="gridParkDescription" style="background-color: ghostwhite;">
