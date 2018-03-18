@@ -99,11 +99,17 @@
                     value="${tempScale}"/></h3>
         </div>
         <div class="todayConversion">
+            <c:if test="${convert == 'C'}">
+                <c:set var="tempScaleSwitch" value="F"/>
+            </c:if>
+            <c:if test="${convert == 'F'}">
+                <c:set var="tempScaleSwitch" value="C"/>
+            </c:if>
             <c:url var="conversionSubmit" value="/parkDetails/${park.parkCode}"/>
             <form method="post" action="${conversionSubmit }">
                 <label><input type="radio" name="convert" value="C"> C
                     <input type="radio" name="convert" value="F"> F
-                    <input type="submit" value="test">
+                    <input type="submit" value="Switch to ${tempScaleSwitch}">
 
                 </label>
             </form>
@@ -134,30 +140,34 @@
             </c:if>
         </div>
     </div>
+
     <div class="gridWeather4Day">
         <c:forEach items="${weather}" var="weather" begin="1">
-            <img src="/img/weather/${weather.forecast}.png" style="height: 10px;"/>
+            <div class="fourDayCell">
+                <div><img src="/img/weather/${weather.forecast}.png"/></div>
 
-            <c:choose>
-                <c:when test="${convert == 'C'}">
-                    <c:set var="highTemp" value="${(weather.high - 32) / 1.8}"/>
-                    <c:set var="lowTemp" value="${(weather.low - 32) / 1.8}"/>
-                    <c:set var="tempScale" value="°C"/>
-                </c:when>
-                <c:otherwise>
-                    <c:set var="highTemp" value="${weather.high}"/>
-                    <c:set var="lowTemp" value="${weather.low}"/>
-                    <c:set var="tempScale" value="°F"/>
+                <c:choose>
+                    <c:when test="${convert == 'C'}">
+                        <c:set var="highTemp" value="${(weather.high - 32) / 1.8}"/>
+                        <c:set var="lowTemp" value="${(weather.low - 32) / 1.8}"/>
+                        <c:set var="tempScale" value="°C"/>
+                    </c:when>
+                    <c:otherwise>
+                        <c:set var="highTemp" value="${weather.high}"/>
+                        <c:set var="lowTemp" value="${weather.low}"/>
+                        <c:set var="tempScale" value="°F"/>
 
-                </c:otherwise>
-            </c:choose>
+                    </c:otherwise>
+                </c:choose>
 
-            <p>Low: <fmt:formatNumber type="number"
-                                      maxFractionDigits="0" value="${lowTemp}"/> <c:out
-                    value="${tempScale}"/>
-                High: <fmt:formatNumber type="number"
-                                        maxFractionDigits="0" value="${highTemp}"/> <c:out
-                        value="${tempScale}"/></p>
+                <div><p>Low: <fmt:formatNumber type="number"
+                                               maxFractionDigits="0" value="${lowTemp}"/> <c:out
+                        value="${tempScale}"/>
+                    High: <fmt:formatNumber type="number"
+                                            maxFractionDigits="0" value="${highTemp}"/> <c:out
+                            value="${tempScale}"/></p>
+                </div>
+            </div>
         </c:forEach>
 
     </div>

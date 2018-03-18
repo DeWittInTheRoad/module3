@@ -309,7 +309,7 @@ body .slider.round:before {
     /*flex-flow: column-reverse;*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 1fr 1fr 1fr 1fr;
 
 
 }
@@ -370,7 +370,6 @@ body .slider.round:before {
     padding-bottom: 0px;
 
 
-
 }
 
 .gridParkDescription{
@@ -425,6 +424,7 @@ body .slider.round:before {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
     padding: 0px;
+    border-radius: 15px;
 
 }
 .gridWeatherToday h3 {
@@ -435,6 +435,7 @@ body .slider.round:before {
 
 }
 .todayWeatherImage{
+    border-radius: 15px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start:1;
@@ -459,7 +460,8 @@ body .slider.round:before {
 .climateAdvisory {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 6;
+    grid-row-start: 5;
+    grid-row-end:6;
     /*grid-row-end: 6;*/
 
 }
@@ -467,7 +469,8 @@ body .slider.round:before {
 .temperatureAdvisory {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 7;
+    grid-row-start: 5;
+    grid-row-end:7;
     /*grid-row-end: 7;*/
 
 }
@@ -479,5 +482,11 @@ body .slider.round:before {
     border-width: 3px;
     border-style: solid;
     background-color: whitesmoke;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+
+.gridWeather4Day img {
+    max-width: 85%;
 }
 

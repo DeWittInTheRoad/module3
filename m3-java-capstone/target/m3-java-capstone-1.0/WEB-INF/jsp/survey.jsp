@@ -8,6 +8,9 @@
 <section id="centeredPanel" style="margin-top: 245px">
 
 <div id = "SurveyBox">
+    <h1>Fill out our survey for your favorite park!</h1>
+    <br>
+    <br>
 <c:url var="newReviewUrl" value="/survey"/>
 <form:form method="POST" action="${newReviewUrl }" modelAttribute="survey">
 

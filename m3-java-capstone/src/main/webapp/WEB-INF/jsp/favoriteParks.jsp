@@ -5,7 +5,7 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
 
 
-<section id="centeredPanel">
+<section id="centeredPanel" style="margin-top: 245px">
 
     <c:url var="pageUrl" value="/favoriteParks"/>
     <br>
