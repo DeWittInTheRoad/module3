@@ -99,20 +99,26 @@
                     value="${tempScale}"/></h3>
         </div>
         <div class="todayConversion">
+            <c:url var="conversionSubmit" value="/parkDetails/${park.parkCode}"/>
+            <form method="post" action="${conversionSubmit}">
             <c:if test="${convert == 'C'}">
                 <c:set var="tempScaleSwitch" value="F"/>
+                <label><input type="radio" name="convert" value="F" checked="checked"></label>
+
             </c:if>
             <c:if test="${convert == 'F'}">
                 <c:set var="tempScaleSwitch" value="C"/>
+                <input type="radio" name="convert" value="C" checked="checked">
             </c:if>
-            <c:url var="conversionSubmit" value="/parkDetails/${park.parkCode}"/>
-            <form method="post" action="${conversionSubmit }">
-                <label><input type="radio" name="convert" value="C"> C
-                    <input type="radio" name="convert" value="F"> F
-                    <input type="submit" value="Switch to ${tempScaleSwitch}">
+                <label> <input type="submit" value="Switch to ${tempScaleSwitch}"></label>
 
-                </label>
+                <%--<label><input type="radio" name="convert" value="C"> C--%>
+                    <%--<input type="radio" name="convert" value="F"> F--%>
+                    <%--<input type="submit" value="Switch to ${tempScaleSwitch}">--%>
+
+                <%--</label>--%>
             </form>
+
         </div>
         <div class="climateAdvisory">
             <c:if test="${today.forecast == 'rain'}">
