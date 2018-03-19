@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface WeatherDao {
     public List<Weather> getWeatherByParkCode(String parkCode);
-//public Weather getWeatherByParkCode(String parkCode);
+
 
 }

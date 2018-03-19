@@ -46,15 +46,3 @@ public class JdbcWeatherDao implements WeatherDao {
 
 
 }
-
-//    @Override
-//    public Weather getWeatherByParkCode(String parkCode) {
-//        List<Weather> allWeather = new ArrayList<>();
-//        Weather weather = null;
-//        String sqlSelectAllWeather = "SELECT * FROM weather WHERE parkCode = ?";
-//        SqlRowSet results = jdbcTemplate.queryForRowSet(sqlSelectAllWeather, parkCode);
-//        while(results.next()) {
-//            weather = mapRowToWeather(results);
-//        }
-//        return weather;
-//    }

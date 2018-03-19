@@ -136,4 +136,13 @@ public class Park {
     public void setNumberOfAnimalSpecies(int numberOfAnimalSpecies) {
         this.numberOfAnimalSpecies = numberOfAnimalSpecies;
     }
+
+    public boolean equals(Park that) {
+        return this.getParkCode().equals(that.getParkCode());
+    }
+
+    @Override
+    public String toString() {
+        return parkName;
+    }
 }
