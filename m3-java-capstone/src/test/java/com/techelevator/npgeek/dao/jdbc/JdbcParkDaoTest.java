@@ -14,7 +14,6 @@ import static org.junit.Assert.assertEquals;
 
 public class JdbcParkDaoTest extends DAOIntegrationTest{
     private static SingleConnectionDataSource dataSource;
-    private JdbcWeatherDao parkDao;
     private JdbcParkDao dao;
 
     @BeforeClass
@@ -24,6 +23,7 @@ public class JdbcParkDaoTest extends DAOIntegrationTest{
         dataSource.setUsername("postgres");
         dataSource.setPassword("postgres1");
         dataSource.setAutoCommit(false);
+
     }
 
     @Before
@@ -55,5 +55,6 @@ public class JdbcParkDaoTest extends DAOIntegrationTest{
 
     @Test
     public void getParkByParkCode() {
+        assertEquals("Grand Teton National Park", dao.getParkByParkCode("GTNP").getParkName());
     }
 }
