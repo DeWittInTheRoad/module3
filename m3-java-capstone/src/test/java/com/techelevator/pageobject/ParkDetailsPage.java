@@ -1,4 +1,4 @@
 package com.techelevator.pageobject;
 
-public class ParkDetails {
+public class ParkDetailsPage {
 }

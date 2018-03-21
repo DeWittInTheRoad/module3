@@ -103,12 +103,14 @@
             <form method="post" action="${conversionSubmit}">
             <c:if test="${convert == 'C'}">
                 <c:set var="tempScaleSwitch" value="F"/>
-                <label><input type="radio" name="convert" value="F" checked="checked"></label>
+                <label><input type="radio" name="convert" value="F" checked="checked" class="formSubmitButton"></label>
 
             </c:if>
             <c:if test="${convert == 'F'}">
                 <c:set var="tempScaleSwitch" value="C"/>
-                <input type="radio" name="convert" value="C" checked="checked">
+                <label convert>
+                    <input type="radio" name="convert" value="C" checked="checked" class="formSubmitButton">
+                </label>
             </c:if>
                 <label> <input type="submit" value="Switch to ${tempScaleSwitch}"></label>
 

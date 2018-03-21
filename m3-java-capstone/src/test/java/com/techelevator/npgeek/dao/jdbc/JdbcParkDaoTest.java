@@ -16,15 +16,15 @@ public class JdbcParkDaoTest extends DAOIntegrationTest{
     private static SingleConnectionDataSource dataSource;
     private JdbcParkDao dao;
 
-    @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-        dataSource = new SingleConnectionDataSource();
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/npgeek");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("postgres1");
-        dataSource.setAutoCommit(false);
-
-    }
+//    @BeforeClass
+//    public static void setUpBeforeClass() throws Exception {
+//        dataSource = new SingleConnectionDataSource();
+//        dataSource.setUrl("jdbc:postgresql://localhost:5432/npgeek");
+//        dataSource.setUsername("postgres");
+//        dataSource.setPassword("postgres1");
+//        dataSource.setAutoCommit(false);
+//
+//    }
 
     @Before
     public void setUp() throws Exception {

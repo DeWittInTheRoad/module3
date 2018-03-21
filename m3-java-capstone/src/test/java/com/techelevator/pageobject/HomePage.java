@@ -13,6 +13,22 @@ public class HomePage {
         this.webDriver = webDriver;
     }
 
+
+    public SurveyPage clickSurveyLink() {
+        WebElement calculatorLink = webDriver.findElement(By.linkText("Survey"));
+        calculatorLink.click();
+        return new SurveyPage(webDriver);
+    }
+
+//    public CuyahogaValleyNationalParkDetails clickCuyahogaValleyNationalParkLink() {
+//        WebElement calculatorLink = webDriver.findElement(By.linkText("Cuyahoga Valley National Park"));
+//        calculatorLink.click();
+//        return new CuyahogaValleyNationalParkDetails(webDriver);
+//    }
+
+
+
+
 }
 
 

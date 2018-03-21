@@ -1,5 +1,6 @@
 package com.techelevator.npgeek.dao.jdbc;
 
+import com.techelevator.DAOIntegrationTest;
 import com.techelevator.npgeek.dao.SurveyDao;
 import com.techelevator.npgeek.model.Survey;
 import com.techelevator.npgeek.model.SurveyResult;
@@ -8,34 +9,34 @@ import org.springframework.jdbc.datasource.SingleConnectionDataSource;
 
 import java.util.List;
 
-public class JdbcSurveyDaoTest {
-    private static SingleConnectionDataSource dataSource;
+public class JdbcSurveyDaoTest extends DAOIntegrationTest{
+//    private static SingleConnectionDataSource dataSource;
     private SurveyDao dao;
 
-    @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-        dataSource = new SingleConnectionDataSource();
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/npgeek");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("postgres1");
-        dataSource.setAutoCommit(false);
-
-    }
+//    @BeforeClass
+//    public static void setUpBeforeClass() throws Exception {
+//        dataSource = new SingleConnectionDataSource();
+//        dataSource.setUrl("jdbc:postgresql://localhost:5432/npgeek");
+//        dataSource.setUsername("postgres");
+//        dataSource.setPassword("postgres1");
+//        dataSource.setAutoCommit(false);
+//
+//    }
 
     @Before
     public void setUp() throws Exception {
-        dao = new JdbcSurveyDao(dataSource);
+        dao = new JdbcSurveyDao(getDataSource());
     }
 
-    @After
-    public void tearDown() throws Exception {
-        dataSource.getConnection().rollback();
-    }
+//    @After
+//    public void tearDown() throws Exception {
+//        getDataSource().getConnection().rollback();
+//    }
 
-    @AfterClass
-    public static void tearDownAfterClass() throws Exception {
-        dataSource.destroy();
-    }
+//    @AfterClass
+//    public static void tearDownAfterClass() throws Exception {
+//        dataSource.destroy();
+//    }
 
     @Test
     public void getAllSurveys() {
@@ -48,7 +49,7 @@ public class JdbcSurveyDaoTest {
 
 
         Survey testSurvey = new Survey();
-        testSurvey.setSurveyid(98L);
+//        testSurvey.setSurveyid(98L);
         testSurvey.setParkCode("TEST");
         testSurvey.setEmailAddress("test@test.com");
         testSurvey.setState("Ohio");
@@ -63,7 +64,7 @@ public class JdbcSurveyDaoTest {
         testSurveyResult.setCount(5);
 
         List<SurveyResult> testResultList = dao.getAllSurveys();
-        testResultList.add(testSurveyResult);
+//        testResultList.add(testSurveyResult);
 
 
         Assert.assertEquals("TEST", testResultList.get(testResultList.size() - 1).getParkCode());

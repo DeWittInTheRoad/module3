@@ -1,4 +1,4 @@
 package com.techelevator.pageobject;
 
-public class allParks {
+public class SurveyResultPage {
 }

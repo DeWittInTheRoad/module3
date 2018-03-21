@@ -24,7 +24,7 @@
 </head>
 
 <body>
-<div class="navbar">
+<div class="navbar" style="z-index: 99;">
     <header>
         <c:url value="/" var="homePageHref"/>
         <c:url value="/img/logo.png" var="logoSrc"/>
