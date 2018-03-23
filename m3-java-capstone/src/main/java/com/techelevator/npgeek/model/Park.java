@@ -1,21 +1,21 @@
 package com.techelevator.npgeek.model;
 
 public class Park {
-    String parkCode;
-    String parkName;
-    String state;
-    int acreage;
-    int elevationInFeet;
-    double milesOfTrail;
-    int numberOfCampsites;
-    String climate;
-    int yearFounded;
-    int AnnualVisitorCount;
-    String inspirationalQuote;
-    String inspirationalQuoteSource;
-    String parkDescription;
-    int entryFee;
-    int numberOfAnimalSpecies;
+    private String parkCode;
+    private String parkName;
+    private String state;
+    private int acreage;
+    private int elevationInFeet;
+    private double milesOfTrail;
+    private int numberOfCampsites;
+    private String climate;
+    private int yearFounded;
+    private int AnnualVisitorCount;
+    private String inspirationalQuote;
+    private String inspirationalQuoteSource;
+    private String parkDescription;
+    private int entryFee;
+    private int numberOfAnimalSpecies;
 
     public String getParkCode() {
         return parkCode;

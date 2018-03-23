@@ -1,11 +1,11 @@
 package com.techelevator.npgeek.model;
 
 public class Weather {
-    String parkCode;
-    int fiveDayForecastValue;
-    int low;
-    int high;
-    String forecast;
+    private String parkCode;
+    private int fiveDayForecastValue;
+    private int low;
+    private int high;
+    private String forecast;
 
     public String getParkCode() {
         return parkCode;

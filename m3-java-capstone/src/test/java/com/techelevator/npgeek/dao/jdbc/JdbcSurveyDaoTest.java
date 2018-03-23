@@ -1,55 +1,44 @@
 package com.techelevator.npgeek.dao.jdbc;
 
 import com.techelevator.DAOIntegrationTest;
+import com.techelevator.npgeek.dao.ParkDao;
 import com.techelevator.npgeek.dao.SurveyDao;
 import com.techelevator.npgeek.model.Survey;
 import com.techelevator.npgeek.model.SurveyResult;
-import org.junit.*;
-import org.springframework.jdbc.datasource.SingleConnectionDataSource;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.List;
 
-public class JdbcSurveyDaoTest extends DAOIntegrationTest{
-//    private static SingleConnectionDataSource dataSource;
-    private SurveyDao dao;
+public class JdbcSurveyDaoTest extends DAOIntegrationTest {
 
-//    @BeforeClass
-//    public static void setUpBeforeClass() throws Exception {
-//        dataSource = new SingleConnectionDataSource();
-//        dataSource.setUrl("jdbc:postgresql://localhost:5432/npgeek");
-//        dataSource.setUsername("postgres");
-//        dataSource.setPassword("postgres1");
-//        dataSource.setAutoCommit(false);
-//
-//    }
+    private SurveyDao dao;
+    private ParkDao parkDao;
+
 
     @Before
     public void setUp() throws Exception {
         dao = new JdbcSurveyDao(getDataSource());
-    }
+        parkDao = new JdbcParkDao(getDataSource());
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
 
-//    @After
-//    public void tearDown() throws Exception {
-//        getDataSource().getConnection().rollback();
-//    }
 
-//    @AfterClass
-//    public static void tearDownAfterClass() throws Exception {
-//        dataSource.destroy();
-//    }
-
-    @Test
-    public void getAllSurveys() {
-
+        String sqlInsertParkTest1 = "INSERT INTO park VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        jdbcTemplate.update(sqlInsertParkTest1, "TEST", "Test Park Name", "Test State",
+                400, 8000, 2.2, 5, "test climate", 1949, 1000, "inspirational quote test",
+                "the one and only me", "awesome park description test", 5, 100);
 
     }
+
 
     @Test
     public void save() {
 
 
         Survey testSurvey = new Survey();
-//        testSurvey.setSurveyid(98L);
+
         testSurvey.setParkCode("TEST");
         testSurvey.setEmailAddress("test@test.com");
         testSurvey.setState("Ohio");
@@ -57,15 +46,7 @@ public class JdbcSurveyDaoTest extends DAOIntegrationTest{
 
         dao.save(testSurvey);
 
-
-        SurveyResult testSurveyResult = new SurveyResult();
-        testSurveyResult.setParkCode("TEST");
-        testSurveyResult.setParkName("TEST PARK");
-        testSurveyResult.setCount(5);
-
         List<SurveyResult> testResultList = dao.getAllSurveys();
-//        testResultList.add(testSurveyResult);
-
 
         Assert.assertEquals("TEST", testResultList.get(testResultList.size() - 1).getParkCode());
     }

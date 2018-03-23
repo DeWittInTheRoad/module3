@@ -5,10 +5,10 @@ import org.hibernate.validator.constraints.NotBlank;
 
 public class Survey {
     private Long surveyid;
-    String parkCode;
-    String emailAddress;
-    String state;
-    String activityLevel;
+    private String parkCode;
+    private String emailAddress;
+    private String state;
+    private String activityLevel;
 
     public Long getSurveyid() {
         return surveyid;

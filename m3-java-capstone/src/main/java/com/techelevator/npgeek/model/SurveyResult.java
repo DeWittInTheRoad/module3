@@ -1,9 +1,9 @@
 package com.techelevator.npgeek.model;
 
 public class SurveyResult {
-    String parkCode;
-    String parkName;
-    int count;
+    private String parkCode;
+    private String parkName;
+    private int count;
 
     public String getParkCode() {
         return parkCode;
@@ -26,5 +26,14 @@ public class SurveyResult {
 
     public void setCount(int count) {
         this.count = count;
+    }
+
+    @Override
+    public String toString() {
+        return "SurveyResult{" +
+                "parkCode='" + parkCode + '\'' +
+                ", parkName='" + parkName + '\'' +
+                ", count=" + count +
+                '}';
     }
 }

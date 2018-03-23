@@ -13,30 +13,12 @@ public class JdbcWeatherDaoTest extends DAOIntegrationTest{
     private static SingleConnectionDataSource dataSource;
     private JdbcWeatherDao dao;
 
-    @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-        dataSource = new SingleConnectionDataSource();
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/npgeek");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("postgres1");
-        dataSource.setAutoCommit(false);
-
-    }
 
     @Before
     public void setUp() throws Exception {
-        dao = new JdbcWeatherDao(dataSource);
+        dao = new JdbcWeatherDao(getDataSource());
     }
 
-    @After
-    public void tearDown() throws Exception {
-        dataSource.getConnection().rollback();
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() throws Exception {
-        dataSource.destroy();
-    }
 
     @Test
     public void getWeatherByParkCode() {

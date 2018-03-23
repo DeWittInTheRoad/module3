@@ -14,11 +14,11 @@ import java.util.List;
 @Component
 public class JdbcParkDao implements ParkDao {
 
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
     @Autowired
     public JdbcParkDao(DataSource dataSource) {
-        this.jdbcTemplate = new JdbcTemplate(dataSource);
+        jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
     @Override
@@ -26,7 +26,7 @@ public class JdbcParkDao implements ParkDao {
         List<Park> allParks = new ArrayList<>();
         String sqlSelectAllParks = "SELECT * FROM park";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sqlSelectAllParks);
-        while(results.next()) {
+        while (results.next()) {
             allParks.add(mapRowToParks(results));
         }
         return allParks;
@@ -37,7 +37,7 @@ public class JdbcParkDao implements ParkDao {
         Park park = null;
         String sqlSelectParkByParkCode = "SELECT * FROM park WHERE parkCode = ?";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sqlSelectParkByParkCode, parkCode);
-        if(results.next()) {
+        if (results.next()) {
             park = mapRowToParks(results);
         }
         return park;
@@ -62,7 +62,6 @@ public class JdbcParkDao implements ParkDao {
         park.setNumberOfAnimalSpecies(row.getInt("numberOfAnimalSpecies"));
         return park;
     }
-
 
 
 }
