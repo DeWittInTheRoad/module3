@@ -15,9 +15,9 @@
     <%--<img id="parkDetailsMainImage" src="${lowerCaseImg}"/>--%>
 
     <div class="gridParkInfo" style="padding-top: 0px; padding-bottom: 0px">
-        <div class="gridParkName" style="background: linear-gradient(#ccc, #333);" >
+        <div class="gridParkName" style="background: linear-gradient(#ccc, #333);">
             <em class="primary" style="font-size: 24px;"><c:out value="${park.parkName}"/></em> <em class="ancillary"
-                                                                                                     style="font-size: 20px; font-style: italic; color: #cacaca;"><c:out
+                                                                                                    style="font-size: 20px; font-style: italic; color: #cacaca;"><c:out
                 value="${park.state}"/></em>
         </div>
         <div class="gridParkDescription" style="background-color: ghostwhite;">
@@ -58,23 +58,16 @@
         <c:url var="parkImage" value="/img/parks/${park.parkCode}.jpg"/>
 
         <c:set var="lowerCaseImg" value="${fn:toLowerCase(parkImage)}"/>
-        <%--<img id="parkDetailsMainImage" src="${lowerCaseImg}"/>--%>
         <div class="parkQuote">"<c:out value="${park.inspirationalQuote}"/>"</div>
         <div class="parkQuoteSource">- <c:out value="${park.inspirationalQuoteSource}"/></div>
 
     </div>
-
-    <%--<div class="gridParkDescription">--%>
-    <%--<p>Park Description: <c:out value="${park.parkDescription}"/></p>--%>
-    <%--</div>--%>
 
 
     <div class="gridWeatherToday">
         <c:set var="today" value="${weather[0]}"/>
         <div class="todayWeatherImage"
              style="background: url('/img/weather/${today.forecast}.png') no-repeat; background-size: contain">
-            <%--<c:set var="today" value="${weather[0]}"/>--%>
-            <%--<img src="/img/weather/${today.forecast}.png"/>--%>
         </div>
 
         <div class="todayTemperature">
@@ -101,24 +94,20 @@
         <div class="todayConversion">
             <c:url var="conversionSubmit" value="/parkDetails/${park.parkCode}"/>
             <form method="post" action="${conversionSubmit}">
-            <c:if test="${convert == 'C'}">
-                <c:set var="tempScaleSwitch" value="F"/>
-                <label><input type="radio" name="convert" value="F" checked="checked" class="formSubmitButton"></label>
+                <c:if test="${convert == 'C'}">
+                    <c:set var="tempScaleSwitch" value="F"/>
+                    <label><input type="radio" name="convert" value="F" checked="checked"
+                                  class="formSubmitButton"></label>
 
-            </c:if>
-            <c:if test="${convert == 'F'}">
-                <c:set var="tempScaleSwitch" value="C"/>
-                <label convert>
-                    <input type="radio" name="convert" value="C" checked="checked" class="formSubmitButton">
-                </label>
-            </c:if>
+                </c:if>
+                <c:if test="${convert == 'F'}">
+                    <c:set var="tempScaleSwitch" value="C"/>
+                    <label convert>
+                        <input type="radio" name="convert" value="C" checked="checked" class="formSubmitButton">
+                    </label>
+                </c:if>
                 <label> <input type="submit" value="Switch to ${tempScaleSwitch}"></label>
 
-                <%--<label><input type="radio" name="convert" value="C"> C--%>
-                    <%--<input type="radio" name="convert" value="F"> F--%>
-                    <%--<input type="submit" value="Switch to ${tempScaleSwitch}">--%>
-
-                <%--</label>--%>
             </form>
 
         </div>

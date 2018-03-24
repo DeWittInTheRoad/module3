@@ -19,6 +19,7 @@
 <head>
     <meta charset="UTF-8">
     <title>National Park Geek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <c:url value="/css/site.css" var="cssHref"/>
     <link rel="stylesheet" href="${cssHref}">
 </head>
